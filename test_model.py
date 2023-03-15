@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 from eval_metrics import get_metrics
 
 #Model Checkpoint 
-dir_list = pickle.load(open('testing_directories.p','rb')) 
+dir_list = glob.glob('model_output/all_subtypes_10_randomseeds_10e/*/')
 model_output_dir = dir_list[int(sys.argv[1])]
 tissue = model_output_dir.split('/')[-2].split('_')[0]
 model_output_dir_glob = glob.glob(model_output_dir + 'checkpoint-*/')
