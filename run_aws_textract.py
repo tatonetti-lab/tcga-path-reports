@@ -43,4 +43,4 @@ for img in imgs:
 
 stop = timeit.default_timer()
 
-print('Total runtime: ', round((stop - start)/60/60,2), 'hours') 
+print('Total runtime: ', round((stop - start)/60/60,2), 'hours.') 
