@@ -24,7 +24,7 @@ else:
     print('Error: Exists >1 checkpoint for Tissue/Random Seed Combination')
 
 #Held-Out Test Set Directory 
-input_dir = '../Target_Selection/final_data_proto_full/'
+input_dir = 'Target_Selection/final_data_proto_full/'
 test_pickle = input_dir + 'Target_Data'+'_'+tissue+'_test.p' 
 
 #Output Directory 
