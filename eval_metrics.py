@@ -1,4 +1,4 @@
-#Evaluate Best-Performing Model on Validation Set 
+#Evaluate Best-Performing Model on Validation or Test Set 
 from sklearn.metrics import accuracy_score, roc_auc_score, average_precision_score, roc_curve, precision_recall_curve
 from scipy.special import softmax
 import matplotlib.pyplot as plt 
