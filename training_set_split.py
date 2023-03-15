@@ -38,7 +38,7 @@ for tissue_type in list(set(tissue_list)):
             tissue_binary.append(0)
     target_df[tissue_type] = tissue_binary
 
-#Separate Finalized Dataset into Full-Training (contains both training/validation) and Held-Out Test Set; Stratify by tissue type  
+#Separate Finalized Dataset into Full-Training (contains both training/validation) and Held-Out Test Set; Stratify by Tissue Type  
 for tissue in tissue_list: 
     
     print(tissue,' patients:', sum(full_df[tissue]))
