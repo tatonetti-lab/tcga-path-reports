@@ -1,3 +1,4 @@
+#Final Report Clean-up
 #Remove Non-clinically relevant (and potentially confounding) keywords from lines; Remove redaction artifacts and empty lines
 
 import glob, os
