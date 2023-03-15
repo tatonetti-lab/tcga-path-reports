@@ -200,7 +200,7 @@ def process_img(img, qc_box_coord):
                 if check_line_printed(block, words):
                     final_line_list.append(block['Text'])
                     
-    if len(final_line_list)>0: #automatically exclude empty pages
+    if len(final_line_list)>0: #Automatically exclude empty pages
         pickle.dump(final_line_list, open(new_dir + img.replace('.jpg','')+'_lines.p', "wb") )
     return orig_n_lines - len(final_line_list)
     
