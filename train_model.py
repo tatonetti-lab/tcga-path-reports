@@ -247,7 +247,7 @@ meta_df['n_actual_pos'] = [n_actual_pos]
 #Save meta_df to csv
 meta_df.to_csv(model_output_dir+tissue+'_rs'+str(seed)+'_meta_df.csv',index=False)
 
-#Delete checkpoint that is not the best model (just the last checkpoint) 
+#Delete checkpoint that is not the best model 
 non_best_model_checkpoint = [a for a in model_checkpoints if str(max(best_checkpoint_steps)) != a.split('-')[-1]][0]
 shutil.rmtree(non_best_model_checkpoint)
 print('Non-Best-Model checkpoint deleted')
