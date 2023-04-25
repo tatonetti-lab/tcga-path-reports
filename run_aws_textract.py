@@ -11,7 +11,7 @@ if not os.path.exists(new_directory):
     os.makedirs(new_directory)
 
 #Load Pathology Report Images - Separate image for each report page
-imgs = glob.glob('imgs_for_aws/*.jpg') 
+imgs = glob.glob('imgs_for_textract/*.jpg') 
 
 #Initialize client 
 client = boto3.client('textract')
