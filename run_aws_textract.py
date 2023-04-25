@@ -6,7 +6,7 @@ import pickle
 import boto3
 
 #Make directory for AWS Response files
-new_directory = 'data/aws_response/'
+new_directory = 'data/textract_response/'
 if not os.path.exists(new_directory):
     os.makedirs(new_directory)
 
