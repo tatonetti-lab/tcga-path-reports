@@ -11,7 +11,7 @@ import regex
 from PIL import Image, ImageDraw
 from IPython.display import display
 
-response_list = glob.glob('data/textract_response/*.p')
+response_list = glob.glob('data/aws_response/*.p')
 random.shuffle(response_list)
 
 new_dir = 'post_table_and_handwriting_removal/' 
@@ -28,7 +28,7 @@ def detect_qc_table(img):
     match_list = []
     
     image_file = 'imgs_for_aws/' + img
-    response =  pickle.load( open('textract_response/'+img.replace('.jpg','')+'_response.p', "rb" ))
+    response =  pickle.load( open('aws_response/'+img.replace('.jpg','')+'_response.p', "rb" ))
     blocks = response['Blocks']
     image=Image.open(image_file)
     draw = ImageDraw.Draw(image)
