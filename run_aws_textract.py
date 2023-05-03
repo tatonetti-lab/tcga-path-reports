@@ -6,12 +6,12 @@ import pickle
 import boto3
 
 #Make directory for AWS Response files
-new_directory = 'data/textract_response/'
+new_directory = 'data/aws_response/'
 if not os.path.exists(new_directory):
     os.makedirs(new_directory)
 
 #Load Pathology Report Images - Separate image for each report page
-imgs = glob.glob('imgs_for_textract/*.jpg') 
+imgs = glob.glob('imgs_for_aws/*.jpg') 
 
 #Initialize client 
 client = boto3.client('textract')
