@@ -1,11 +1,6 @@
 ### TCGA Pathology Reports in Machine Readable Text
 
 
-Code and associated data for "Benchmark Pathology Report Text Corpus with Cancer Type Classification" (Kefeli et al.).  
+## Code and associated data for "Benchmark Pathology Report Text Corpus with Cancer Type Classification" (Kefeli et al.).  
 
-The following data directories can be found at https://tatonettilab.org/resources/tcga-path-reports/ due to large file size:
-
--imgs_for_aws: Images for Textract input
-
--aws_response: Response files (per page) of Textract output 
-
+Due to large file size, imgs_for_aws (images for Textract input) and aws_response (response files for Textract output) can be found at the following repository: https://tatonettilab.org/resources/tcga-path-reports/
