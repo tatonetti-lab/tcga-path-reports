@@ -1,7 +1,7 @@
 ### TCGA Pathology Reports in Machine Readable Text
 
 
-## Code and associated data for "Benchmark Pathology Report Text Corpus with Cancer Type Classification" (Kefeli et al.).  
+## Code and associated data for "TCGA-Reports: A Machine-Readable Pathology Report Resource for Benchmarking Text-Based AI Models" (Kefeli et al.).  
 
 Reports can be found above, in TCGA_Reports.csv.zip.
 
